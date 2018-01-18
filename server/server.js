@@ -42,7 +42,7 @@ app.get('/todos/:id', (req, res) => {
             return res.sendStatus(404);
         }
 
-        res.send(todo);
+        res.send({todo});
     }).catch(e => {
         res.sendStatus(400);
     })
