@@ -276,7 +276,7 @@ describe('POST /users/login', () => {
                     });
                     done();
                 }).catch(e => done(e));
-            })
+            });
     });
 
     it('should reject invalid login', (done) => {
@@ -299,6 +299,6 @@ describe('POST /users/login', () => {
                     expect(user.tokens.length).toBe(0);
                     done();
                 }).catch(e => done(e));
-            })
+            });
     });
 });
